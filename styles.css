@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+}
+* {
+  box-sizing: border-box;
+}
+
+/* container */
+.container {
+  padding: 5px 10vw;
+}
+
+.wrapper {
+  background-color: rgba(110, 161, 202, 0.473);
+  display: grid;
+  grid-template-areas:
+    "nav"
+    "hero"
+    "banner"
+    "skills"
+    "projects"
+    "aboutme"
+    "contact"
+    "footer";
+
+  position: relative;
+}
+
+/* floating icon */
+.floater {
+  height: 30px;
+  width: 30px;
+  background-color: orangered;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
+/* nav-bar */
+nav {
+  grid-area: nav;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0px -3px 11px -3px rgba(0, 0, 0, 0.911);
+}
+
+nav ul {
+  display: flex;
+  gap: 10px;
+  list-style-type: none;
+}
+/* hero section */
+.hero {
+  grid-area: hero;
+}
+
+/* banner */
+.banner {
+  grid-area: banner;
+}
+
+/* skills */
+.skills {
+  grid-area: skills;
+}
+
+/* projects */
+.projects {
+  grid-area: projects;
+}
+
+/* About Me */
+.aboutme {
+  grid-area: aboutme;
+}
+
+/* contact */
+.contact {
+  grid-area: contact;
+}
+
+footer {
+  grid-area: footer;
+}
