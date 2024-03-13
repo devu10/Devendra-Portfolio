@@ -127,6 +127,29 @@ nav ul li:hover {
 /* banner */
 .banner {
   grid-area: banner;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 0 10vw;
+  padding: 10px 10px;
+  align-items: center;
+}
+
+.banner hr {
+  height: 25px;
+}
+
+.banner-logo {
+  background-color: orangered;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+}
+
+.banner div {
+  display: flex;
+  gap: 5px;
 }
 
 /* skills */
