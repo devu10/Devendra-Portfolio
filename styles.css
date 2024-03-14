@@ -248,6 +248,14 @@ h2 {
 /* About Me */
 .aboutme {
   grid-area: aboutme;
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.aboutme > div {
+  display: flex;
 }
 
 /* contact */
