@@ -1,25 +1,118 @@
+:root {
+  --color-main: orangered;
+  --color-dark: #2a2a2a;
+
+  --body-bg: rgb(182, 209, 214);
+  --header-bg: var(--body-bg);
+  --text-color: var(--color-dark);
+}
+
+/* resetters */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
 }
+
 * {
   box-sizing: border-box;
 }
 
-h2 {
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.flex {
+  display: flex;
+  gap: 1rem;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.grid {
+  display: grid;
+  gap: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.nova-slim-regular {
+  font-family: "Nova Slim", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* wrapper */
+.wrapper {
+  background: var(--body-bg);
+  min-height: 100vh;
+}
+
+/* <!-- dark mode toggler --> */
+
+/* <!-- nav-bar --> */
+header {
+  box-shadow: -2px -3px 11px -3px rgba(0, 0, 0, 0.911);
+  position: static;
+  top: 0;
+  background: var(--header-bg);
+}
+
+header .header {
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+.logo {
+  font-size: 1.3rem;
+  position: relative;
+}
+
+.logo :first-child {
+  font-weight: bold;
+  margin-right: 1rem;
+}
+/* <!-- hero section --> */
+/* <!-- BAnner --> */
+/* <!-- Skills --> */
+/* <!-- Projects --> */
+/* <!-- About section --> */
+/* <!-- Contact section --> */
+/* <!-- footer --> */
+
+/* Test-version */
+/* .nova-slim-regular {
+  font-family: "Nova Slim", system-ui;
+  font-weight: 400;
+  font-style: normal;
+} */
+
+/* h2 {
   text-decoration: underline;
   text-decoration-color: orangered;
-}
+} */
 
 /* container */
-.container {
+/* .container {
   padding: 5px 50px;
-}
+} */
 
-.thumbnail-container {
+/* .thumbnail-container {
   padding: 4px 10px;
-}
+} */
 
-.wrapper {
+/* .wrapper {
   background-color: rgba(110, 161, 202, 0.473);
   display: grid;
   grid-template-areas:
@@ -33,10 +126,10 @@ h2 {
     "footer";
 
   position: relative;
-}
+} */
 
 /* floating icon */
-.floater {
+/* .floater {
   height: 30px;
   width: 30px;
   background-color: orangered;
@@ -50,50 +143,50 @@ h2 {
   position: fixed;
   bottom: 10px;
   right: 10px;
-}
+} */
 
-.wrapper > div:nth-child(2) {
+/* .wrapper > div:nth-child(2) {
   position: fixed;
   top: 90px;
   left: 10px;
-}
+} */
 
 /* nav-bar */
-.nav-bar {
+/* .nav-bar {
   grid-area: nav;
   display: flex;
   align-items: center;
   justify-content: space-between;
   box-shadow: 0px -3px 11px -3px rgba(0, 0, 0, 0.911);
-}
+} */
 
-nav > div > span:nth-child(2) {
+/* nav > div > span:nth-child(2) {
   color: orangered;
   font-weight: bolder;
-}
+} */
 
-nav > div > span:first-child {
+/* nav > div > span:first-child {
   font-family: "Courier New";
   font-weight: bold;
-}
+} */
 
-.nav-ul {
+/* .nav-ul {
   display: flex;
   gap: 10px;
   list-style-type: none;
   font-weight: bolder;
-}
+} */
 
-#bar {
+/* #bar {
   display: none;
-}
+} */
 
-nav ul li:hover {
+/* nav ul li:hover {
   color: red;
   cursor: pointer;
-}
+} */
 /* hero section */
-.hero {
+/* .hero {
   grid-area: hero;
   height: 60vh;
   display: flex;
@@ -101,9 +194,9 @@ nav ul li:hover {
   justify-content: center;
 
   position: relative;
-}
+} */
 
-.hero-content {
+/* .hero-content {
   padding: 30px 60px;
   background-color: orangered;
   font-size: small;
@@ -134,10 +227,10 @@ nav ul li:hover {
   background-size: cover;
   position: absolute;
   right: 10vw;
-}
+} */
 
 /* banner */
-.banner {
+/* .banner {
   grid-area: banner;
   display: flex;
   justify-content: space-between;
@@ -170,9 +263,9 @@ nav ul li:hover {
 }
 .banner > div > div > span:last-child {
   color: orangered;
-}
+} */
 /* skills */
-.skills {
+/* .skills {
   grid-area: skills;
   display: flex;
   flex-direction: column;
@@ -198,10 +291,10 @@ h2 {
 
 .fa-custom-size {
   font-size: 50px;
-}
+} */
 
 /* projects */
-.projects {
+/* .projects {
   grid-area: projects;
   display: flex;
   flex-direction: column;
@@ -251,10 +344,10 @@ h2 {
 .p4 {
   grid-area: p4;
   background: rgb(43, 117, 99);
-}
+} */
 
 /* About Me */
-.aboutme {
+/* .aboutme {
   background-color: rgba(59, 110, 35, 0.603);
   grid-area: aboutme;
   padding-top: 50px;
@@ -274,10 +367,10 @@ h2 {
   height: 200px;
   width: 200px;
   object-fit: cover;
-}
+} */
 
 /* contact */
-.contact {
+/* .contact {
   grid-area: contact;
   display: flex;
   flex-direction: column;
@@ -327,19 +420,19 @@ footer {
   justify-content: center;
   align-items: center;
   margin-top: 50px;
-}
+} */
 
 /* mobile */
-@media (width < 550px) {
+/* @media (width < 550px) {
   .nav-ul {
     display: none;
   }
   #bar {
     display: block;
-  }
+  } */
 
-  /* banner */
-  .myImg {
+/* banner */
+/* .myImg {
     background: url(./assets/devendra_black_bg.png) no-repeat;
     width: 200px;
     height: 200px;
@@ -370,14 +463,14 @@ footer {
     width: 130px;
     bottom: 3px;
     right: 1px;
-  }
+  } */
 
-  /* about */
-  .aboutme > div {
+/* about */
+/* .aboutme > div {
     padding-top: 25px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-}
+} */
