@@ -3,8 +3,10 @@
   --color-dark: #2a2a2a;
 
   --body-bg: rgb(182, 209, 214);
-  --header-bg: var(--body-bg);
   --text-color: var(--color-dark);
+
+  --dark-bg: var(--color-dark);
+  --dark-text-color: white;
 }
 
 /* resetters */
@@ -47,11 +49,12 @@ a {
   color: inherit;
 }
 
-.nova-slim-regular {
+/* google font */
+/* .nova-slim-regular {
   font-family: "Nova Slim", system-ui;
   font-weight: 400;
   font-style: normal;
-}
+} */
 
 /* wrapper */
 .wrapper {
@@ -60,13 +63,23 @@ a {
 }
 
 /* <!-- dark mode toggler --> */
+[for="darkmode"] {
+  position: fixed;
+  top: 7rem;
+  left: 3rem;
+}
 
+[for="darkmode"]:hover {
+  cursor: pointer;
+  transform: scale(1.5);
+  transform: 0.3s;
+}
 /* <!-- nav-bar --> */
 header {
   box-shadow: -2px -3px 11px -3px rgba(0, 0, 0, 0.911);
   position: static;
   top: 0;
-  background: var(--header-bg);
+  background: var(--body-bg);
 }
 
 header .header {
@@ -82,7 +95,41 @@ header .header {
 .logo :first-child {
   font-weight: bold;
   margin-right: 1rem;
+
+  font-family: "Nova Slim", system-ui;
+  font-weight: 400;
+  font-style: normal;
 }
+
+.line::before {
+  content: "";
+  background: var(--color-main);
+  width: 2px;
+  height: 100%;
+
+  position: absolute;
+  left: 46%;
+}
+
+.navigation {
+  list-style: none;
+  font-weight: bold;
+}
+
+.navigation li:hover {
+  color: var(--color-main);
+  transition: all 0.6;
+}
+/* Appy dark mode  */
+#darkmode {
+  display: none;
+}
+
+#darkmode:checked + .wrapper {
+  --body-bg: var(--dark-bg);
+  color: var(--dark-text-color);
+}
+
 /* <!-- hero section --> */
 /* <!-- BAnner --> */
 /* <!-- Skills --> */
