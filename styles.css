@@ -276,6 +276,16 @@ header .header {
 }
 
 /* <!-- About section --> */
+.about {
+  margin-top: 5rem;
+  background: rgba(82, 122, 70, 0.829);
+  padding: 7rem;
+}
+
+.about .my-image {
+  width: 40%;
+}
+
 /* <!-- Contact section --> */
 /* <!-- footer --> */
 footer {
