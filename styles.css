@@ -310,6 +310,40 @@ header .header {
 }
 
 /* <!-- Contact section --> */
+.contact {
+  padding-top: 7rem, 0;
+
+  width: 400px;
+  margin: auto;
+  margin-top: 5rem;
+}
+
+.contact .social {
+  font-size: 3rem;
+  justify-content: center;
+  justify-content: space-between;
+}
+
+.contact .email-section {
+  background: black;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 40px;
+  margin-top: 2rem;
+
+  gap: 3rem;
+}
+
+.contact .email-section span {
+  font-size: 1.2rem;
+}
+
+.contact .email-icon {
+  background: var(--color-main);
+  width: 1.8rem;
+  height: 1.82rem;
+  border-radius: 50%;
+}
 /* <!-- footer --> */
 footer {
   grid-area: footer;
