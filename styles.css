@@ -82,7 +82,7 @@ a {
 /* <!-- nav-bar --> */
 header {
   box-shadow: var(--shadow);
-  position: static;
+  position: sticky;
   top: 0;
   background: var(--body-bg);
 }
@@ -149,6 +149,7 @@ header .header {
 .hero-section {
   margin-top: 5rem;
   max-height: 60vh;
+  padding-top: 8rem;
 }
 
 .hero {
@@ -332,6 +333,7 @@ header .header {
   margin-top: 2rem;
 
   gap: 3rem;
+  box-shadow: var(--shadow);
 }
 
 .contact .email-section span {
@@ -364,4 +366,16 @@ footer .top ul {
 
 footer .top ul li {
   line-height: 1.5rem;
+}
+
+/* floating icon */
+.scroll-up {
+  font-size: 1rem;
+  background: var(--color-main);
+  color: black;
+  padding: 0.5rem;
+  border-radius: 50%;
+  position: fixed;
+  right: 20px;
+  bottom: 10px;
 }
