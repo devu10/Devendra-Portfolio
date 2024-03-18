@@ -20,6 +20,7 @@ html {
 
 body {
   margin: 0;
+  overflow-x: hidden;
 }
 
 * {
@@ -280,7 +281,7 @@ header .header {
 .about {
   margin-top: 5rem;
   background: rgba(82, 122, 70, 0.829);
-  padding: 7rem;
+  padding: 7rem 0;
 }
 
 .about .my-image {
@@ -378,4 +379,83 @@ footer .top ul li {
   position: fixed;
   right: 20px;
   bottom: 10px;
+}
+
+#hamburgerMenu {
+  display: none;
+}
+
+[for="hamburgerMenu"] {
+  cursor: pointer;
+  display: none;
+}
+/* medida query */
+
+@media (max-width: 768px) {
+  [for="hamburgerMenu"] {
+    cursor: pointer;
+    display: block;
+  }
+  .menu {
+    position: absolute;
+    background: var(--body-bg);
+    box-shadow: var(--shadow);
+
+    width: 250px;
+    height: 100vh;
+
+    top: 3.7rem;
+
+    left: 100vw;
+  }
+
+  .menu .navigation {
+    flex-direction: column;
+    font-size: 1.3rem;
+  }
+
+  .menu .navigation li {
+    line-height: 1.9rem;
+  }
+
+  #hamburgerMenu:checked + .menu {
+    left: calc(100vw - 265px);
+  }
+
+  /* hero */
+  .hero {
+    grid-template-areas:
+      "right"
+      "left ";
+  }
+
+  .hero .right {
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+
+  /* banner */
+
+  .banner {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 20%;
+    margin-top: 10rem;
+  }
+  .info-divider {
+    display: none;
+  }
+
+  /* projects */
+
+  .projects .project-list {
+    grid-template-columns: 1fr;
+  }
+
+  /* about */
+  .about-content {
+    flex-direction: column;
+    align-items: center;
+  }
 }
