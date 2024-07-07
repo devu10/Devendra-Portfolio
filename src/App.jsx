@@ -1,4 +1,6 @@
 import "./App.css";
+import imgdev1 from "./assets/dev-bg.png";
+import imgdev2 from "./assets/devendra_black_bg.png";
 
 function App() {
   return (
@@ -61,7 +63,7 @@ function App() {
               </div>
             </div>
             <div className="right flex">
-              <img src="./assets/dev-bg.png" alt="devendra-img" />
+              <img src={imgdev1} alt="devendra-img" />
             </div>
           </div>
         </section>
@@ -239,11 +241,7 @@ function App() {
           </h2>
           <div className="container flex about-content">
             <div className="flex-center my-imgae">
-              <img
-                src="./assets/devendra_black_bg.png"
-                alt="devendra-image-2"
-                width="100%"
-              />
+              <img src={imgdev2} alt="devendra-image-2" width="100%" />
             </div>
             <div className="my-bio container">
               <h2>Devendra Raj Dahal</h2>
