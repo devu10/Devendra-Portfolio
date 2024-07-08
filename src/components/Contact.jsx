@@ -1,11 +1,10 @@
 import React from "react";
+import { Title } from "./Title";
 
 export const Contact = () => {
   return (
     <section className="contact" id="contact">
-      <h2 className="title">
-        <span>Contact</span>
-      </h2>
+      <Title title={"Contact"} />
       <div className="flex social">
         <a href="">
           <i className="fa-brands fa-linkedin"></i>
