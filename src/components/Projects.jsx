@@ -1,11 +1,10 @@
 import React from "react";
+import { Title } from "./Title";
 
 export const Projects = () => {
   return (
     <section className="projects container" id="projects">
-      <h2 className="title">
-        <span>My Projects</span>
-      </h2>
+      <Title title={"My Projects"} />
 
       <div className="grid project-list">
         {/* <!-- project 1 --> */}

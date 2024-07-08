@@ -1,11 +1,10 @@
 import React from "react";
 import imgdev2 from "../assets/devendra_black_bg.png";
+import { Title } from "./Title";
 export const AboutMe = () => {
   return (
     <section className="about" id="about">
-      <h2 className="title">
-        <span>About Me</span>
-      </h2>
+      <Title title="About Me" />
       <div className="container flex about-content">
         <div className="flex-center my-imgae">
           <img src={imgdev2} alt="devendra-image-2" width="100%" />
