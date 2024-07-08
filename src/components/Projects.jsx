@@ -1,5 +1,7 @@
 import React from "react";
+import p from "../assets/project-portfolio.png";
 import { Title } from "./Title";
+import { Card } from "./Card";
 
 export const Projects = () => {
   return (
@@ -74,27 +76,13 @@ export const Projects = () => {
           </div>
         </div>
         {/* <!-- project 4 --> */}
-        <div className="project-card">
-          <div className="top">
-            <img
-              src="./assets/Project-1.JPG"
-              alt="Project-thumbnail"
-              width="100%"
-            />
-          </div>
-          <div className="bottom container">
-            <div className="links">
-              <a href="">
-                <i className="fa-brands fa-square-github"></i>
-              </a>
-              <a href="">
-                <i className="fa-brands fa-chrome"></i>
-              </a>
-            </div>
-            <h3>Personal Portfoli</h3>
-            <p>Tech: HTML, CSS, Javascript</p>
-          </div>
-        </div>
+        <Card
+          image={p}
+          github={"https://www.google.com"}
+          url={"www.google.com"}
+          title={"portfolio of self"}
+          description={"this is the  description"}
+        />
       </div>
     </section>
   );
