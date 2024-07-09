@@ -78,8 +78,10 @@ export const Projects = () => {
         {/* <!-- project 4 --> */}
         <Card
           image={p}
-          github={"https://www.google.com"}
-          url={"www.google.com"}
+          github={"https://github.com/devu10/Devendra-Portfolio.git"}
+          url={
+            "https://devendra-portfolio-1dswqolab-devendra-dahals-projects.vercel.app/"
+          }
           title={"portfolio of self"}
           description={"this is the  description"}
         />
