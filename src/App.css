@@ -418,7 +418,10 @@ footer .top ul li {
     line-height: 1.9rem;
   }
 
-  #hamburgerMenu:checked + .menu {
+  /* #hamburgerMenu:checked + .menu {
+    left: calc(100vw - 265px);
+  } */
+  .slide {
     left: calc(100vw - 265px);
   }
 
