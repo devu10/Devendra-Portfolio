@@ -1,6 +1,21 @@
 import React from "react";
+import { useEffect, useState } from "react";
 
-export const Footer = ({ scrollYPosition }) => {
+export const Footer = () => {
+  const [scrollYPosition, setScrollYPosition] = useState(0);
+
+  const handleOnScrollY = () => {
+    setScrollYPosition(window.scrollY);
+  };
+  useEffect(() => {
+    //end of the render, run below event
+    window.addEventListener("scroll", handleOnScrollY);
+    //clen up the events
+    return () => {
+      window.removeEventListener("scroll", handleOnScrollY);
+    };
+  });
+
   return (
     <>
       <footer className="flex-center">
