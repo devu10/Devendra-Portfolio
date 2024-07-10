@@ -6,8 +6,23 @@ import { NavBar } from "./components/NavBar";
 import { Projects } from "./components/Projects";
 import { Skills } from "./components/Skills";
 import { Footer } from "./components/Footer";
+import { useEffect, useState } from "react";
 
 function App() {
+  const [scrollYPosition, setScrollYPosition] = useState(0);
+
+  const handleOnScrollY = () => {
+    setScrollYPosition(window.scrollY);
+  };
+  useEffect(() => {
+    //end of the render, run below event
+    window.addEventListener("scroll", handleOnScrollY);
+    //clen up the events
+    return () => {
+      window.removeEventListener("scroll", handleOnScrollY);
+    };
+  });
+
   return (
     <>
       {/* <!-- dark mode button --> */}
@@ -35,7 +50,7 @@ function App() {
         {/* <!-- Contact section --> */}
         <Contact />
         {/* <!-- footer --> */}
-        <Footer />
+        <Footer scrollYPosition={scrollYPosition} />
       </div>
     </>
   );

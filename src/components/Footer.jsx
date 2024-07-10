@@ -1,6 +1,6 @@
 import React from "react";
 
-export const Footer = () => {
+export const Footer = ({ scrollYPosition }) => {
   return (
     <>
       <footer className="flex-center">
@@ -37,11 +37,13 @@ export const Footer = () => {
             </ul>
           </div>
         </div>
-        <div className="bottom">&copy devudevu10@gmail.com</div>
+        <div className="bottom">&copy; www.ddahal.com</div>
       </footer>
-      <a href="#hero" className="scroll-up">
-        <i className="fa-solid fa-chevron-up"></i>
-      </a>
+      {scrollYPosition > 800 && (
+        <a href="#hero" className="scroll-up">
+          <i className="fa-solid fa-chevron-up"></i>
+        </a>
+      )}
     </>
   );
 };
