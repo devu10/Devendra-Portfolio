@@ -52,7 +52,9 @@ export const Footer = () => {
             </ul>
           </div>
         </div>
-        <div className="bottom">&copy; www.ddahal.com</div>
+        <div className="bottom">
+          &copy; <a href="www.ddahal.com">ddahal.com</a>
+        </div>
       </footer>
       {scrollYPosition > 800 && (
         <a href="#hero" className="scroll-up">
