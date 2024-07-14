@@ -6,6 +6,7 @@ import { NavBar } from "./components/NavBar";
 import { Projects } from "./components/Projects";
 import { Skills } from "./components/Skills";
 import { Footer } from "./components/Footer";
+import { Route, Routes } from "react-router-dom";
 
 function App() {
   return (
@@ -20,20 +21,27 @@ function App() {
         {/* <!-- nav-bar --> */}
 
         <NavBar />
+        <Routes>
+          <Route path="/" element={<Hero />} />
+          <Route path="skills" element={<Skills />} />
+          <Route path="projects" element={<Projects />} />
+          <Route path="aboutme" element={<AboutMe />} />
+          <Route path="contact" element={<Contact />} />
+        </Routes>
         {/* <!-- hero and banner section --> */}
 
-        <Hero />
+        {/* <Hero /> */}
 
         {/* <!-- Skills --> */}
-        <Skills />
+        {/* <Skills /> */}
         {/* <!-- Projects --> */}
 
-        <Projects />
+        {/* <Projects /> */}
         {/* <!-- About me section --> */}
 
-        <AboutMe />
+        {/* <AboutMe /> */}
         {/* <!-- Contact section --> */}
-        <Contact />
+        {/* <Contact /> */}
         {/* <!-- footer --> */}
         <Footer />
       </div>
